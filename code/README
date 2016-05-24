@@ -1,0 +1,20 @@
+This folder contains most of the code I needed for the 18086 project.  Not
+included are files pertaining the PARTISN, which is restricted software.
+j roberts 5/18/2010
+
+The basic solvers are found in 
+  sn_one_d.m  -- basic sweeps+PI in 1-D
+  sn_two_d.m  -- basic sweeps+PI in 2-D
+  S_1D.m      -- 1-D Gauss-Legendre quadrature set
+  S_2D.m      -- 2-D level set method following Lewis and Miller, 1993
+
+The matrix solvers are in
+  sn_one_d_2g_matrix_vec.m  -- 1-D multigroup matrix formulation
+  sn_two_d_matrix.m         -- 2-D " "
+
+Input files are
+  study_1d_***.m   -- the inputs for the various report studies
+  sn2d2gtest.m     -- basic 2-D input for sweep+PI (generates 2-D
+                       color plot in report)
+  sn2dtest.m       -- simple verification for 2-D matrix and
+                      gives a spy plot
